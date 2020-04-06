@@ -6,8 +6,13 @@ class Home extends React.Component {
     super(props);
 
     this.state = {
-      textArray: ["Developer", "Marketer", "Graphic Designer"],
-      textToShow: "Developer",
+      textArray: [
+        "Developer",
+        "Marketer",
+        "Graphic Designer",
+        "Lets Build Something Great",
+      ],
+      textToShow: "Lets Build Something Great",
       textIndex: 0,
     };
   }

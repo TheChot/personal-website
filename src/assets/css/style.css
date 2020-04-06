@@ -1,3 +1,7 @@
+/* use white blue and black as theme colors */
+:root {
+  --main-color: #0117ac;
+}
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +11,24 @@
   vertical-align: baseline;
   background: transparent;
 }
+/* Navbar */
+.top-navbar {
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+.top-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin: 0px 5px;
+  transition: 0.1s;
+}
+
+.top-navbar .nav-link:hover {
+  color: white !important;
+  border-bottom: 2px solid var(--main-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Home page */
 .home-page,
 .home-page body,
 .home-page #root,
@@ -150,6 +172,9 @@
 }
 
 /* About Me Page */
+.row-spacing {
+  padding: 5% 0;
+}
 .top-banner-area {
   width: 100%;
   padding: 10% 0;
@@ -159,8 +184,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  text-align: center;
+  /* text-align: center; */
 }
 .top-banner-area h1 {
   color: white;
+  text-shadow: 5px 2px #02000094;
+}
+
+/* .intro-text {
+  text-align: center;
+  padding: 5% 0;
+} */
+
+.intro-text h1 {
+  margin-bottom: 20px;
+  color: var(--main-color);
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.2);
 }
